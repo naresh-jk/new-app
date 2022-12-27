@@ -44,7 +44,7 @@ excelToArray(evt){
             this.dataObj.selectedFileName = fileName;
         },
                     
-        // scroll to top - need to insert 'required' as a class
+        // scroll to error field - need to insert 'required' as a class
                     
           scrollToErr(){
                     setTimeout(() => {
