@@ -43,3 +43,12 @@ excelToArray(evt){
             reader.readAsArrayBuffer(evt.target.files[0]);
             this.dataObj.selectedFileName = fileName;
         },
+                    
+        // scroll to top - need to insert 'required' as a class
+                    
+          scrollToErr(){
+                    setTimeout(() => {
+                        let scrollTo = document.querySelector('.required').offsetTop - 202;
+                        window.scroll({ top: scrollTo, behavior: 'smooth' });
+                    }, 100);
+                },
